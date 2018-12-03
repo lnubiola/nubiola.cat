@@ -51,10 +51,11 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     top: 0;
     border: none;
-    &.route-iframe__hidden{
-      iframe{
-        display: none;
-      }
+
+  }
+  &.route-iframe__hidden{
+    iframe{
+       display: none;
     }
   }
   i.route-iframe__button {
