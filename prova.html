@@ -56,15 +56,13 @@
             <div class="mdc-layout-grid__inner">
 
                 <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4 route-iframe__hidden">
-                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"
-                         onclick="
-                            $(this).parent().toggleClass('mdc-layout-grid__cell--span-4' ).toggleClass('mdc-layout-grid__cell--span-12' ).toggleClass('route-iframe__hidden' );
-                            $(this).find('.route-iframe__button').toggleClass('hidden');
-                            "
-                         style="background-image: url('/SetmanaSanta2016.png');">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary" style="background-image: url('/SetmanaSanta2016.png');">
                         <iframe class="route-iframe" src="http://nubiola.cat/SetmanaSanta2016.html">
                         </iframe>
-                        <div class="mdc-card__media-content">
+                        <div class="mdc-card__media-content" onclick="
+                            $(this).parent().parent().toggleClass('mdc-layout-grid__cell--span-4' ).toggleClass('mdc-layout-grid__cell--span-12' ).toggleClass('route-iframe__hidden' );
+                            $(this).find('.route-iframe__button').toggleClass('hidden');
+                            ">
                             <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on route-iframe__button ">fullscreen</i>
                             <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on route-iframe__button hidden">fullscreen_exit</i>
                         </div>
@@ -81,8 +79,8 @@
 
 
                     <div class="mdc-card__actions">
-                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button">
-                            <i  onclick="window.location.href = 'SetmanaSanta2016.html';" title="More" class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_new</i>
+                        <button   onclick="window.location.href = 'SetmanaSanta2016.html';" class="mdc-button mdc-card__action mdc-card__action--icon more-button">
+                            <i title="More" class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_new</i>
                         </button>
                     </div>
                 </div>
