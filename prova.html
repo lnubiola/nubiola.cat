@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bundle.css" rel="stylesheet">
+    <style>
+        main {
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        .mdc-card__media-content{
+            background-size: cover;
+        }
+        .route-card > .mdc-card__primary {
+            padding: 1rem;
+        }
+    </style>
+
+    <title>
+    </title>
+</head>
+
+<body class="mdc-typography">
+<header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">Rutes</span>
+        </section>
+    </div>
+</header>
+
+
+<main class="mdc-top-app-bar--fixed-adjust mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <section class="presentation mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-elevation--z2">
+            <div class="mdc-layout-grid__inner">
+                <div class="image__square mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-6-phone mdc-theme--primary-bg mdc-theme--on-primary">
+                </div>
+
+
+                <div class=" mdc-layout-grid__cell  mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-6-phone">
+                    <h2 class="mdc-typography--headline4">Rutes en moto</h2>
+
+
+                    <p>Rutes fetes amb moto, obtigudes del log del GPS Navigator V, i visualizades amb la ajuda de GPS Visualizer</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="routes  mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <div class="mdc-layout-grid__inner">
+
+                <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4 route-iframe__hidden" onclick="
+                $(this).toggleClass('mdc-layout-grid__cell--span-4' ).toggleClass('mdc-layout-grid__cell--span-12' ).toggleClass('route-iframe__hidden' );
+                $(this).find('.route-iframe__button').toggleClass('hidden');
+                ">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"  style="background-image: url('http://nubiola.cat/SetmanaSanta2016.png');">
+                        <iframe class="route-iframe" src="http://nubiola.cat/SetmanaSanta2016.html">
+                        </iframe>
+                        <div class="mdc-card__media-content">
+                            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on route-iframe__button ">fullscreen</i>
+                            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on route-iframe__button hidden">fullscreen_exit</i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mdc-card__primary">
+                        <h2 class="demo-card__title mdc-typography--headline6">Setmana Santa</h2>
+
+
+                        <h3 class="demo-card__subtitle mdc-typography--subtitle2">2016</h3>
+                    </div>
+
+
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button">
+                            <i  onclick="window.location.href = 'link.html';" title="More" class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_new</i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4" onclick="window.location.href = 'SetmanaSanta2016';">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"  style="background-image: url('http://nubiola.cat/RutesMaigJuny2016.png');">
+                    </div>
+
+
+                    <div class="mdc-card__primary">
+                        <h2 class="demo-card__title mdc-typography--headline6">Maig - Juny</h2>
+
+
+                        <h3 class="demo-card__subtitle mdc-typography--subtitle2">2016</h3>
+                    </div>
+
+
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button" onclick="window.location.href = 'link.html';" title="More">Veure la ruta</button>
+                    </div>
+                </div>
+
+                <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4" onclick="window.location.href = 'SetmanaSanta2016';">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"  style="background-image: url('http://nubiola.cat/1702_garotada.png');">
+                    </div>
+
+
+                    <div class="mdc-card__primary">
+                        <h2 class="demo-card__title mdc-typography--headline6">Febrer</h2>
+
+
+                        <h3 class="demo-card__subtitle mdc-typography--subtitle2">2017</h3>
+                    </div>
+
+
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button" onclick="window.location.href = 'link.html';" title="More">Veure la ruta</button>
+                    </div>
+                </div>
+
+                <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4" onclick="window.location.href = 'SetmanaSanta2016';">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"  style="background-image: url('http://nubiola.cat/20180519AnantALaPlatja.png');">
+                    </div>
+
+
+                    <div class="mdc-card__primary">
+                        <h2 class="demo-card__title mdc-typography--headline6">Anant a la platja</h2>
+
+
+                        <h3 class="demo-card__subtitle mdc-typography--subtitle2">2018</h3>
+                    </div>
+
+
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button" onclick="window.location.href = 'link.html';" title="More">Veure la ruta</button>
+                    </div>
+                </div>
+
+
+
+                <div class="mdc-card route-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4" onclick="window.location.href = 'SetmanaSanta2016';">
+                    <div class="mdc-card__media mdc-card__media--16-9 mdc-theme--primary-bg mdc-theme--on-primary"  style="background-image: url('http://nubiola.cat/BarcelonaCalongePelPirineu180803-map.png');">
+                    </div>
+
+
+                    <div class="mdc-card__primary">
+                        <h2 class="demo-card__title mdc-typography--headline6">Anant a Calonge pel Pirineu</h2>
+
+
+                        <h3 class="demo-card__subtitle mdc-typography--subtitle2">2018</h3>
+                    </div>
+
+
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--icon more-button" onclick="window.location.href = 'link.html';" title="More">Veure la ruta</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script async src="bundle.js">
+</script>
+</body>
+</html>
